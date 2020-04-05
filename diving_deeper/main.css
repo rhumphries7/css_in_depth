@@ -8,7 +8,7 @@ body {
 }
 
 #product-overview {
-  background: #ff1b68;
+  background: #191919;
   width: 100%;
   border: 10px black solid;
   padding: 10px;
@@ -28,7 +28,47 @@ body {
 
 .main-header {
   width: 100%;
-  background: #2ddf5c;
+  background: #0a3751;
   padding: 8px 16px;
-  border: 10px black solid;
 }
+
+.main-nav {
+  display: inline-block;
+  text-align: right;
+  width: calc(100% - 70px);
+  vertical-align: middle ;
+}
+
+.main-header > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.main-header__brand {
+  color: green;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
+}
+.main-nav__items {
+    
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+.main-nav__item {
+    display: inline-block;
+    margin: 0 16px;
+  }
+
+.main-nav__item a {
+    text-decoration: none;
+    color: green;
+  }
+
+
+.main-nav__item a:hover{
+
+}
+

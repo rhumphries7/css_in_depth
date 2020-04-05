@@ -1,0 +1,27 @@
+body {
+  font-family: sans-serif;
+}
+
+.dif code {
+  color: green;
+}
+
+code {
+  font-family: monospace;
+  color: red;
+}
+
+h1 {
+  color: blue;
+  font-family: sans-serif;
+}
+
+li + li {
+  background: black;
+  color: white;
+}
+
+ol > li {
+  background: black;
+  color: white;
+}

@@ -1,0 +1,19 @@
+.box-1{
+  padding: 30px 20px 10px 5px;
+  border: black 10px solid;
+  margin: 30px 20px 10px 5px;
+  height: 300px%;
+  width: 50%;
+  display: inline-block;
+  visibility: hidden;
+}
+.box-2{
+  padding: 30px 20px 10px 5px;
+  border: black 10px solid;
+  margin: 30px 20px 10px 5px;
+  display: inline-block;
+}
+
+.box-2:hover{
+  color:red;
+}

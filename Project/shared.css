@@ -142,7 +142,7 @@ main{
 
 .main-footer {
   background: black;
-  padding: 2rem;
+  padding: .5rem;
   margin-top: 2rem;
   /* grid-row: 3 / 4 ; */
   grid-area: footer;

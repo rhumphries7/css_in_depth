@@ -1,8 +1,13 @@
+:root {
+  --dark-green: #0e4f1f;
+  --higlight-color: #ff1b68;
+}
+
 * {
   box-sizing: border-box;
 }
 
-html{
+html {
   height: 100%;
 }
 
@@ -17,7 +22,7 @@ body {
   height: 100%;
 }
 
-main{
+main {
   grid-area: main;
 }
 
@@ -68,7 +73,7 @@ main{
 }
 
 .main-header__brand {
-  color: #0e4f1f;
+  color: var(--dark-green);
   text-decoration: none;
   font-weight: bold;
   font-size: 1.5rem;
@@ -100,7 +105,7 @@ main{
 .main-nav__item a,
 .mobile-nav__item a {
   text-decoration: none;
-  color: #0e4f1f;
+  color: var(--dark-green);
   font-weight: bold;
   padding: 0.2rem 0;
 }
@@ -111,10 +116,14 @@ main{
   border-bottom: 5px solid white;
 }
 
-.main-nav__item--cta a,
-.mobile-nav__item--cta a {
+.main-nav__item--cta {
+  animation: wiggle 400ms 3s 8 none;
+}
+
+
+.main-nav__item--cta a {
   color: white;
-  background: #ff1b68;
+  background: var(--higlight-color);
   padding: 0.5rem 1rem;
   border-radius: 8px;
 }
@@ -123,12 +132,12 @@ main{
 .main-nav__item--cta a:active,
 .mobile-nav__item--cta a:hover,
 .mobile-nav__item--cta a:active {
-  color: #ff1b68;
+  color: var(--higlight-color);
   background: white;
   border: none;
 }
 
-@media(min-width:40rem){
+@media(min-width:40rem) {
   .main-nav{
     display: flex;
   }
@@ -208,10 +217,10 @@ main{
 }
 
 .button {
-  background: #0e4f1f;
+  background: var(--dark-green);
   color: white;
   font: inherit;
-  border: 1.5px solid #0e4f1f;
+  border: 1.5px solid var(--dark-green);
   padding: 0.5rem;
   border-radius: 8px;
   font-weight: bold;
@@ -223,7 +232,7 @@ main{
 .button:hover,
 .button:active {
   background: white;
-  color: #0e4f1f;
+  color: var(--dark-green);
 }
 
 .button:focus {
@@ -239,5 +248,20 @@ main{
 
 .open {
     display: block !important;
+    opacity: 1 !important;
+    transform: translateY(0) !important;
 }
 
+@keyframes wiggle{
+  0%{
+    transform: rotateZ(0);
+  }
+  50%{
+    transform: rotateZ(-10deg);
+  }
+  100%{
+    transform: rotateZ(10deg);
+  }
+}
+
+@keyframes 
